@@ -8,6 +8,7 @@ const Bottle = ({bottle , handleAddToCart}) => {
             <img src={img} alt="" />
             <p>Price : ${price}</p>
             <button onClick={()=>handleAddToCart(bottle)} >Purches</button>
+            {/* <p>HEllo World</p> */}
         </div>
     );
 };
