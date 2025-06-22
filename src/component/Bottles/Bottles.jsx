@@ -22,10 +22,19 @@ const Bottles = () => {
 
     useEffect(()=> {
         console.log(bottles.length)
-        if( bottles.length < 0 ){
+        if( bottles.length){
             const storedCart = getStoredCart();
             console.log(storedCart);
-            onload(storedCart)
+            const savedCart = [];
+            for(const id of storedCart){
+                console.log(id);
+                const bottle = bottles.find(bottle => bottle.id == id);
+                if(bottle){
+                    savedCart.push(bottle)
+                }
+            }
+            console.log(savedCart);
+            setCart(savedCart);
         }
     } ,[bottles])
     return (
