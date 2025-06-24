@@ -3,7 +3,7 @@ import './Bottle.css'
 const Bottle = ({bottle , handleAddToCart}) => {
     const {name, price, img} = bottle;
     return (
-        <div className='bottle'>
+        <div className='bottleC'>
             <h3>Name : {name}</h3>
             <img src={img} alt="" />
             <p>Price : ${price}</p>
@@ -13,4 +13,4 @@ const Bottle = ({bottle , handleAddToCart}) => {
     );
 };
 
-export default Bottle;
+export default Bottle

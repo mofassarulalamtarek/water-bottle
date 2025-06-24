@@ -1,0 +1,12 @@
+.cartContainer {
+    display: flex;
+    margin: 10px;
+}
+.cartContainer img {
+    width: 50px;
+    border-radius: 50%;
+}
+.cartIN {
+    display: grid;
+    gap: 10px;
+}
